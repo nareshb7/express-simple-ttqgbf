@@ -1,3 +1,26 @@
-<link rel="stylesheet" href="./style.css" />
-<h1>Hello Express!</h1>
-<h2>This is My First Project in Express</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Node Email erification</title>
+  </head>
+  <body>
+    <h1>Hello Express!</h1>
+    <h2>This is My First Project in Express</h2>
+    <form action="/validate" method="POST">
+      <label
+        >Enter Your Email : <input type="text" required name="email" />
+      </label>
+      <label>
+        Enter Subject: <input type="text" name="subject" required />
+      </label>
+      <label> Enter Text : <textarea name="text"></textarea></label>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

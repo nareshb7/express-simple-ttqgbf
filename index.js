@@ -27,8 +27,9 @@ app.post('/validate', (req, res) => {
   options.subject = subject;
   options.text = text;
   transporter.sendMail(options, (err, info) => {
+    console.log(options, 'options');
     if (err) {
-      console.log('Error Occured', err);
+      console.log('Error Occured', err.message);
       res.send('Error Occured');
     } else {
       console.log('Mail is sent');

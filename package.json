@@ -7,6 +7,7 @@
     "server": "nodemon index.js"
   },
   "dependencies": {
+    "@vonage/server-sdk": "^3.0.15",
     "express": "^4.17.1",
     "nodemailer": "^6.8.0"
   },

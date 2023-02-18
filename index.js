@@ -33,3 +33,21 @@ async function sendSMS() {
 sendSMS();
 
 app.listen(3010, () => console.log('server is running....'));
+
+// MongoDB shell
+// {returnNewDocument: true}
+
+// Ref: https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
+
+// Mongoose
+// {new: true}
+
+// Ref: http://mongoosejs.com/docs/api.html#query_Query-findOneAndUpdate
+
+// Node.js MongoDB Driver API:
+// {returnOriginal: false}
+
+// 2021 - Mongodb ^4.2.0 Update
+// { returnDocument: 'after' }
+
+// Ref: http://mongodb.github.io/node-m
